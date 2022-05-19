@@ -9,10 +9,10 @@ public class Pasien extends Users {
     String alamat;
 
     Pasien(int id, String name, Time createdAt, Time updatedAt, Time deletedAt,
-           String email, String password, String noHp,
+           String email, String password, String gender, String noHp,
            int umur, String alamat
     ) {
-        super(id, name, email, password, "Pasien", noHp);
+        super(id, name, email, password, "Pasien", gender, noHp);
         this.alamat = alamat;
         this.umur = umur;
     }
@@ -21,4 +21,5 @@ public class Pasien extends Users {
     public int getId() {
         return this.id;
     }
+
 }
