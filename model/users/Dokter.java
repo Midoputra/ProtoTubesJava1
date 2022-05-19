@@ -30,9 +30,8 @@ public class Dokter extends Users {
         this.listPasien.remove(pasien);
     }
     public void editPasien(int id, Pasien pasien){
-//        int index = this.listPasien.indexOf(pasien);
         for(int i = 0; i < this.listPasien.size(); i++){
-            if(this.listPasien.get(i).id == id){
+            if(this.listPasien.get(i).getId() == id){
                 this.listPasien.set(i, pasien);
             }
         }
